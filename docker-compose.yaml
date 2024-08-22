@@ -1,0 +1,17 @@
+services:
+  ocsigen:
+    image: ocsigen_img
+    build: .
+    container_name: ocsigen
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./:/dev/app/"
+    environment:
+      - PGHOST=localhost
+      - PGDATABASE=h42n42
+      - PGUSER=opam
+      - PGPORT=5432
+      - PGPASSWORD=password
+    stdin_open: true
+    tty: true

@@ -1,0 +1,180 @@
+(rule (target demo.ml) (deps ../demo.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo} --impl demo.eliom)))))
+(rule (target demo_cache.ml) (deps ../demo_cache.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_cache} --impl demo_cache.eliom)))))
+(rule (target demo_calendar.ml) (deps ../demo_calendar.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_calendar} --impl demo_calendar.eliom)))))
+(rule (target demo_carousel1.ml) (deps ../demo_carousel1.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_carousel1} --impl demo_carousel1.eliom)))))
+(rule (target demo_carousel2.ml) (deps ../demo_carousel2.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_carousel2} --impl demo_carousel2.eliom)))))
+(rule (target demo_carousel3.ml) (deps ../demo_carousel3.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_carousel3} --impl demo_carousel3.eliom)))))
+(rule (target demo_i18n.ml) (deps ../demo_i18n.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_i18n} --impl demo_i18n.eliom)))))
+(rule (target demo_links.ml) (deps ../demo_links.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_links} --impl demo_links.eliom)))))
+(rule (target demo_notif.ml) (deps ../demo_notif.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_notif} --impl demo_notif.eliom)))))
+(rule (target demo_pagetransition.ml) (deps ../demo_pagetransition.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_pagetransition} --impl demo_pagetransition.eliom)))))
+(rule (target demo_pgocaml.ml) (deps ../demo_pgocaml.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_pgocaml} --impl demo_pgocaml.eliom)))))
+(rule (target demo_popup.ml) (deps ../demo_popup.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_popup} --impl demo_popup.eliom)))))
+(rule (target demo_pulltorefresh.ml) (deps ../demo_pulltorefresh.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_pulltorefresh} --impl demo_pulltorefresh.eliom)))))
+(rule (target demo_react.ml) (deps ../demo_react.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_react} --impl demo_react.eliom)))))
+(rule (target demo_ref.ml) (deps ../demo_ref.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_ref} --impl demo_ref.eliom)))))
+(rule (target demo_rpc.ml) (deps ../demo_rpc.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_rpc} --impl demo_rpc.eliom)))))
+(rule (target demo_services.ml) (deps ../demo_services.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_services} --impl demo_services.eliom)))))
+(rule (target demo_spinner.ml) (deps ../demo_spinner.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_spinner} --impl demo_spinner.eliom)))))
+(rule (target demo_timepicker.ml) (deps ../demo_timepicker.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_timepicker} --impl demo_timepicker.eliom)))))
+(rule (target demo_tips.ml) (deps ../demo_tips.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_tips} --impl demo_tips.eliom)))))
+(rule (target demo_tongue.ml) (deps ../demo_tongue.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_tongue} --impl demo_tongue.eliom)))))
+(rule (target demo_tools.ml) (deps ../demo_tools.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_tools} --impl demo_tools.eliom)))))
+(rule (target demo_users.ml) (deps ../demo_users.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../demo_users} --impl demo_users.eliom)))))
+(rule (target myapp.ml) (deps ../myapp.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp} --impl myapp.eliom)))))
+(rule (target myapp_Demo_i18n.ml) (deps ../myapp_Demo_i18n.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_Demo_i18n} --impl myapp_Demo_i18n.eliom)))))
+(rule (target myapp_base.ml) (deps ../myapp_base.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_base} --impl myapp_base.eliom)))))
+(rule (target myapp_config.ml) (deps ../myapp_config.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_config} --impl myapp_config.eliom)))))
+(rule (target myapp_config.mli) (deps ../myapp_config.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_container.ml) (deps ../myapp_container.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_container} --impl myapp_container.eliom)))))
+(rule (target myapp_container.mli) (deps ../myapp_container.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_drawer.ml) (deps ../myapp_drawer.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_drawer} --impl myapp_drawer.eliom)))))
+(rule (target myapp_handlers.ml) (deps ../myapp_handlers.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_handlers} --impl myapp_handlers.eliom)))))
+(rule (target myapp_handlers.mli) (deps ../myapp_handlers.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_i18n.ml) (deps ../myapp_i18n.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_i18n} --impl myapp_i18n.eliom)))))
+(rule (target myapp_icons.ml) (deps ../myapp_icons.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_icons} --impl myapp_icons.eliom)))))
+(rule (target myapp_language.ml) (deps ../myapp_language.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_language} --impl myapp_language.eliom)))))
+(rule (target myapp_language.mli) (deps ../myapp_language.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_mobile.ml) (deps ../myapp_mobile.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_mobile} --impl myapp_mobile.eliom)))))
+(rule (target myapp_mobile.mli) (deps ../myapp_mobile.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_page.ml) (deps ../myapp_page.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_page} --impl myapp_page.eliom)))))
+(rule (target myapp_page.mli) (deps ../myapp_page.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_phone_connect.ml) (deps ../myapp_phone_connect.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_phone_connect} --impl myapp_phone_connect.eliom)))))
+(rule (target myapp_services.ml) (deps ../myapp_services.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_services} --impl myapp_services.eliom)))))
+(rule (target myapp_services.mli) (deps ../myapp_services.eliomi)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp --intf %{deps})))))
+(rule (target myapp_settings.ml) (deps ../myapp_settings.eliom)
+  (action
+    (with-stdout-to %{target}
+      (chdir .. (run tools/eliom_ppx_client.exe --as-pp -server-cmo %{cmo:../myapp_settings} --impl myapp_settings.eliom)))))
