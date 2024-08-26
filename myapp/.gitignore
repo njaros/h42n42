@@ -18,3 +18,7 @@ cordova
 
 static/css/myapp.css.map
 static/css/myapp.css
+
+# js
+
+node_modules
