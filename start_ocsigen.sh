@@ -1,5 +1,7 @@
-sudo chown -R opam /dev/app
+cd myapp
 eval $(opam config env)
-echo "YES" | eliom-distillery -name myapp -template os.pgocaml
-
-bash
+make db-delete
+make db-init
+make db-create
+make db-schema
+make test.byte

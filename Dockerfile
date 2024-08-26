@@ -21,5 +21,5 @@ WORKDIR /dev/app
 # RUN eval $(opam config env)
 # RUN echo "YES" | eliom-distillery -name myapp -template os.pgocaml
 RUN eval $(opam config env)
-ENTRYPOINT [ "sh" ]
-# CMD [ "./start_ocsigen.sh" ]
+ENTRYPOINT [ "bash" ]
+CMD [ "./start_ocsigen.sh" ]
