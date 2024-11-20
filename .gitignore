@@ -27,3 +27,8 @@ setup.log
 
 # Local OPAM switch
 _opam/
+
+dev/myapp/node_modules/
+node_modules/
+*/node_modules
+*/node_modules/*

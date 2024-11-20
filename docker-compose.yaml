@@ -1,0 +1,11 @@
+services:
+  ocsigen:
+    image: ocsigen_img
+    build: .
+    container_name: ocsigen
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./dev:/dev/app/"
+    stdin_open: true
+    tty: true
