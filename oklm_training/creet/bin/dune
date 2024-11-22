@@ -1,0 +1,6 @@
+(executable
+ (public_name creet)
+ (name main)
+ (libraries creet lwt lwt.unix)
+ (preprocess (pps lwt_ppx))
+ (flags (-w)))

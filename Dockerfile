@@ -7,7 +7,7 @@ RUN sudo apt-get install -y postgresql ruby-sass libsqlite3-dev
 
 # Installing ocsigen
 RUN opam init
-RUN opam install -y ocsigen-start ocsipersist-sqlite-config eliom dune
+RUN opam install -y ocsigen-start js_of_ocaml-ppx ocsipersist-sqlite-config eliom dune
 
 # Just for the os to be able to locate the Ocaml binary...
 # I begin to anderstand why nobody uses this language.

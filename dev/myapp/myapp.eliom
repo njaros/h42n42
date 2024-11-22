@@ -20,16 +20,16 @@ module%shared App = Eliom_registration.App (struct
    blinking when changing page in iOS). *)
 let%client _ = Eliom_client.persist_document_head ()
 
-let%server main_service =
+let%server h42n42 =
   Eliom_service.create ~path:(Eliom_service.Path [])
     ~meth:(Eliom_service.Get Eliom_parameter.unit) ()
 
-let%client main_service = ~%main_service
+let%client h42n42 = ~%h42n42
 
 let%shared () =
-  App.register ~service:main_service (fun () () ->
+  App.register ~service:h42n42 (fun () () ->
     Lwt.return
-      Eliom_content.Html.F.(
+      Eliom_content.Html.D.(
         html
           (head
              (title (txt "myapp"))
@@ -39,4 +39,4 @@ let%shared () =
                       ~service:(Eliom_service.static_dir ())
                       ["css"; "myapp.css"])
                  () ])
-          (body [h1 [txt "Welcome to Eliom!"]])))
+          (body [h1 [txt "Welcome to Eliom!"]])));
