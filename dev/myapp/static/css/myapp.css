@@ -1,3 +1,19 @@
 * {
     font-family: sans-serif;
 }
+
+body {
+    border-radius: 50px;
+    display: flex;
+    div {
+        justify-content: center;
+        min-height: 50%;
+        min-width: 50%;
+        display: flex;
+        background-color: rgb(84, 199, 214);
+        .ball {
+            background-color: black;
+            size: 5px;
+        }
+    }
+}

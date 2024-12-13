@@ -39,4 +39,4 @@ let%shared () =
                       ~service:(Eliom_service.static_dir ())
                       ["css"; "myapp.css"])
                  () ])
-          (body [h1 [txt "Welcome to Eliom!"]])));
+          (body [div[svg[]]])));

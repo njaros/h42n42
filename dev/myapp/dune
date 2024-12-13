@@ -4,7 +4,7 @@
  (name myapp)
  (modules
   (:standard \ Myapp_main))
- (libraries eliom.server ocsipersist-sqlite ocsipersist-sqlite.settings)
+ (libraries eliom.server ocsipersist-sqlite ocsipersist-sqlite.settings tyxml)
  (library_flags
   (:standard -linkall))
  (wrapped false)
@@ -37,7 +37,8 @@
   eliom.server
   ocsipersist-sqlite
   ocsigenserver.ext.staticmod
-  myapp)
+  myapp
+  tyxml)
  (modules Myapp_main)
  (preprocess
   (pps
