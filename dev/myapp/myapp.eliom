@@ -39,4 +39,24 @@ let%shared () =
                       ~service:(Eliom_service.static_dir ())
                       ["css"; "myapp.css"])
                  () ])
-          (body [div[svg[]]])));
+          (body [div[Tyxml.Svg.(
+            svg
+              ~a:[
+                      a_width (100., Some `Px);
+                      a_height (100., Some `Px);
+                      a_viewBox (0., 0., 100., 100.)
+                ]
+                [
+                  circle 
+                    ~a:[
+                      a_cx (50., Some `Px);
+                      a_cy (50., Some `Px);
+                      a_r (40., Some `Px);
+                      a_fill (`Color ("blue", None))
+                    ]
+                    ()
+                ])
+              ]
+            ])
+          )
+  );
